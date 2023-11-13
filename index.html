@@ -47,7 +47,7 @@
 							</li>
 						</ul>
 						<form class="">
-							<button class="btn" type="button">Войти</button>
+							<button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#authModal">Войти</button>
 						</form>
 					</div>
 				</div>
@@ -57,7 +57,123 @@
 		<!-- main start -->
 		<main>
 
+			<!-- news section -->
+			<section class="news">
+				<div class="container">
+					<div class="title-box">
+						<h2 class="title">Новости</h2>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<img src="images/news-img-1.png" alt="news img">
+							<div class="newst-content">
+								<span class="date">18.05.2023</span>
+								<h4 class="news-title">Персонажу «Вася» добавлен костюм единорога</h4>
+								<div class="text-end">
+									<a class="btn btn-two" href="#!">Подробнее</a>
+								</div>
+							</div>
+						</div>
 
+						<div class="col-4">
+							<img src="images/news-img-1.png" alt="news img">
+							<div class="newst-content">
+								<span class="date">18.05.2023</span>
+								<h4 class="news-title">Персонажу «Вася» добавлен костюм единорога</h4>
+								<div class="text-end">
+									<a class="btn btn-two" href="#!">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<img src="images/news-img-1.png" alt="news img">
+							<div class="newst-content">
+								<span class="date">18.05.2023</span>
+								<h4 class="news-title">Персонажу «Вася» добавлен костюм единорога</h4>
+								<div class="text-end">
+									<a class="btn btn-two" href="#!">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-3">
+						<div class="col-4">
+							<img src="images/news-img-1.png" alt="news img">
+							<div class="newst-content">
+								<span class="date">18.05.2023</span>
+								<h4 class="news-title">Персонажу «Вася» добавлен костюм единорога</h4>
+								<div class="text-end">
+									<a class="btn btn-two" href="#!">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<img src="images/news-img-1.png" alt="news img">
+							<div class="newst-content">
+								<span class="date">18.05.2023</span>
+								<h4 class="news-title">Персонажу «Вася» добавлен костюм единорога</h4>
+								<div class="text-end">
+									<a class="btn btn-two" href="#!">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<img src="images/news-img-1.png" alt="news img">
+							<div class="newst-content">
+								<span class="date">18.05.2023</span>
+								<h4 class="news-title">Персонажу «Вася» добавлен костюм единорога</h4>
+								<div class="text-end">
+									<a class="btn btn-two" href="#!">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<div class="tabs">
+				<div class="container">
+
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+								role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+								role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+								role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="olma-tab" data-bs-toggle="tab" data-bs-target="#olma-tab-pane" type="button"
+								role="tab" aria-controls="olma-tab-pane" aria-selected="false">Contact</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+							0
+						</div>
+						<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+							1
+						</div>
+						<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+							2
+						</div>
+						<div class="tab-pane fade" id="olma-tab-pane" role="tabpanel" aria-labelledby="olma-tab" tabindex="0">
+							3
+						</div>
+					</div>
+
+				</div>
+			</div>
 
 		</main>
 
@@ -66,6 +182,53 @@
 
 		</footer>
 
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="authModal" tabindex="-1"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-top">
+					<h1 class="modal-title" id="exampleModalLabel">Modal title</h1>
+					<button type="button" class="close-modal__btn" data-bs-dismiss="modal" aria-label="Close">
+						<img src="images/icons/btn-close.svg" alt="">
+					</button>
+				</div>
+				<div class="modal-body">
+					<label>Email</label>
+					<input type="email" name="email" placeholder="geek.tanya.hayden@gmail.com">
+					<label>Email</label>
+					<input type="email" name="email" placeholder="geek.tanya.hayden@gmail.com"><br>
+					<button class="btn">Войти</button><br>
+					<button class="btn-link">Забыли пароль?</button><br>
+					<button class="btn" data-bs-toggle="modal" data-bs-target="#registerModal">Зарегистрироваться</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+	<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-top">
+					<h1 class="modal-title" id="exampleModalLabel">Modal title</h1>
+					<button type="button" class="close-modal__btn" data-bs-dismiss="modal" aria-label="Close">
+						<img src="images/icons/btn-close.svg" alt="">
+					</button>
+				</div>
+				<div class="modal-body">
+					<label>Email</label>
+					<input type="email" name="email" placeholder="geek.tanya.hayden@gmail.com">
+					<label>Email</label>
+					<input type="email" name="email" placeholder="geek.tanya.hayden@gmail.com"><br>
+					<button class="btn">Войти</button><br>
+					<button class="btn-link">Забыли пароль?</button><br>
+					<button class="btn">Зарегистрироваться</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- bootstrap js -->
